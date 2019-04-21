@@ -1,5 +1,6 @@
 eureka:
   client:
+  #注册中心地址
     service-url:
       defaultZone: http://www.eureka1.com:8080/eureka/,http://www.eureka2.com:8081/eureka/
 spring:
@@ -7,18 +8,18 @@ spring:
     name: user-provider
 ---
 spring:
-    profiles: provider1
+  profiles: provider1
 server:
-  port: 9096
+  port: 9090
 eureka:
   instance:
     instance-id: user1
     prefer-ip-address: true
 ---
 spring:
-    profiles: provider2
+  profiles: provider2
 server:
-  port: 9097
+  port: 9091
 eureka:
   instance:
     instance-id: user2
