@@ -10,7 +10,7 @@ spring:
 spring:
   profiles: provider1
 server:
-  port: 9092
+  port: 9094
 eureka:
   instance:
     instance-id: user1
@@ -19,7 +19,7 @@ eureka:
 spring:
   profiles: provider2
 server:
-  port: 9093
+  port: 9095
 eureka:
   instance:
     instance-id: user2
